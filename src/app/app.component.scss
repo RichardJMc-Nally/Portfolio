@@ -1,0 +1,43 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.loadingContainer {
+  text-align: center;
+}
+
+.loadingTitle {
+  color: #FFFFFF;
+  font-size: 60px;
+}
+
+.loading {
+  color: #FFFFFF;
+  font-size: 40px;
+}
+
+//<<<<<<<<<< Media Queries >>>>>>>>>>
+@media screen and (max-width: 430px) {
+  .loadingTitle {
+    font-size: 40px;
+  }
+  
+  .loading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .loadingTitle {
+    font-size: 30px;
+  }
+
+  .loading {
+    font-size: 25px;
+  }
+}
+//<<<<<<<<<< Media Queries >>>>>>>>>>
