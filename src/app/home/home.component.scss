@@ -1,0 +1,189 @@
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+//   height: 100dvh;
+// overflow-x: hidden;
+}
+
+.intro__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100dvh;
+  border-bottom: 1px solid #FFF;
+}
+
+.intro__Title_Text {
+  color: white;
+  font-size: 2.25rem;
+}
+
+.intro__SubTitle_Text {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100dvh;
+  border-bottom: 1px solid #FFF;
+}
+
+.about__Inner_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  // border: 1px dotted #FFF;
+}
+
+.about__Title_Text {
+  color: #FFFFFF;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.about__Text {
+  color: #FFFFFF;
+  font-size: 1.75rem;
+  line-height: normal;
+  text-align: justify;
+}
+
+.projects__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100dvh;
+  border-bottom: 1px solid #FFF;
+}
+
+.projects__Title_text {
+  color: #FFFFFF;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.projects__Inner_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  // border: 1px dotted #FFF;
+}
+
+.CV__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid #FFFFFF;
+  height: 100dvh; //Remove this line
+}
+
+.CV__Inner_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.CV__Inner_container:nth-of-type(1) {
+  position: sticky;
+  top: 0;
+}
+
+.CV__Inner_container:nth-of-type(2),
+.CV__Inner_container:nth-of-type(3), 
+.CV__Inner_container:nth-of-type(4) {
+  margin-top: 20px;
+}
+
+.CV__Inner_container:nth-of-type(2),
+.CV__Inner_container:nth-of-type(3), 
+.CV__Inner_container:nth-of-type(4) {
+  width: 50%;
+  align-items: flex-start;
+  padding-left: 16px;
+}
+
+.CV__Name_Text {
+  color: #FFFFFF;
+  font-size: 40px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.CV__CurrentRole_Text {
+  color: #FFFFFF;
+  font-size: 1.625rem;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.CV__SectionTitle_text {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.CV__Text_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.contact__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.contact__Inner_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;  
+}
+
+.contact__Inner_container:nth-of-type(1) {
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contact__Inner_container:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+
+.contact__Name_text {
+  color: #FFFFFF;
+  font-size: 40px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.contact__SubTitle_text {
+  color: #FFFFFF;
+  font-size: 1.625rem;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.contact__Email {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
