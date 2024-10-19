@@ -4,6 +4,24 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  height: 100vh;
+}
+
+.snap__container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.snap__section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .intro__container {
@@ -13,7 +31,6 @@
   flex-direction: column;
   width: 100%;
   height: 100dvh;
-  border-bottom: 1px solid #FFF;
 }
 
 .intro__Title_Text {
@@ -26,309 +43,17 @@
   font-size: 1.875rem;
 }
 
-.about__container {
+app-about, app-projects, app-cv, app-contact {
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100dvh;
-  border-bottom: 1px solid #FFF;
-}
-
-.about__Inner_container {
-  display: flex;
   align-items: center;
-  justify-content: flex-start;
-  width: 60%;
 }
 
-.about__Title_Text {
-  color: #FFFFFF;
-  font-size: 3.5rem;
-  font-weight: bold;
-}
-
-.about__Text {
-  color: #FFFFFF;
-  font-size: 2rem;
-  line-height: normal;
-  text-align: justify;
-}
-
-.projects__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100dvh;
-  border-bottom: 1px solid #FFFFFF;
-}
-
-.projects__Title_text {
-  color: #FFFFFF;
-  font-size: 3.5rem;
-  font-weight: bold;
-}
-
-.projects__Inner_container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 50%;
-}
-
-.CV__container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  width: 100%;
-  border-bottom: 1px solid #FFFFFF;
-}
-
-.CV__Inner_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-
-.CV__Inner_container:nth-of-type(1) {
-  background: unset;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  border: none;
-}
-
-.CV__Inner_container:nth-of-type(2),
-.CV__Inner_container:nth-of-type(3), 
-.CV__Inner_container:nth-of-type(4) {
-  margin-top: 20px;
-}
-
-.CV__Inner_container:nth-of-type(2),
-.CV__Inner_container:nth-of-type(3), 
-.CV__Inner_container:nth-of-type(4) {
-  width: 50%;
-  align-items: flex-start;
-  padding-left: 16px;
-}
-
-.CV__Name_Text {
-  color: #FFFFFF;
-  font-size: 3.5rem;
-  border-bottom: 0.0625rem solid #FFFFFF;
-}
-
-.CV__CurrentRole_Text {
-  color: #FFFFFF;
-  font-size: 2.125rem;
-  border-bottom: 0.0625rem solid #FFFFFF;
-}
-
-.CV__SectionTitle_text {
-  color: #FFFFFF;
-  font-size: 1.875rem;
-  font-weight: bold;
-}
-
-.CV__Text_container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-}
-
-.CV__Job_container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.CV__Date_text {
-  color: #FFFFFF;
-  font-size: 1rem;
-  font-weight: bold;
-  text-align-last: left;
-}
-
-.CV__JobTitle_container {
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-  width: 100%;
-  gap: 10px;
-}
-
-.CV__JobTitle_text {
-  color: #FFFFFF;
-  font-size: 24px;
-}
-
-.CV__Employer_text {
-  color: #FFFFFF;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.CV__Job_container ul>li {
-  font-size: 18px;
-  color: #FFFFFF;
-  list-style-type: square;
-}
-
-.CV__Education_container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.CV__Education_container ul>li {
-  font-size: 18px;
-  color: #FFFFFF;
-  list-style-type: square;
-}
-
-.CV__Inner_container >.CV__Education_container:nth-of-type(3) > .CV__EducationTitle_container {
-  flex-direction: column;
-  gap: 0;
-}
-
-.CV__EducationTitle_container {
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-  width: 100%;
-  gap: 10px;
-}
-
-.CV__Education_text {
-  font-size: 24px;
-  color: #FFFFFF;
-}
-
-.CV__Institute_text {
-  font-size: 20px;
-  font-weight: bold;
-  color: #FFFFFF;
-}
-
-.CV__EducationDescription_text {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.CV__Skills_container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  padding: 10px;
-}
-
-.CV__Skills_text {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.CV__TechSlider {
-  width: 100%;
-  height: var(--height);
-  overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    #000000 10% 90%,
-    transparent);
-    gap: 20px;
-}
-
-.CV__TechSlider .CV__Technologies_container {
-  display: flex;
-  width: 100%;
-  min-width: calc((var(--width) + 20px) * var(--quantity));
-  position: relative;
-  gap: 200px;
-}
-
-.CV__TechSlider .CV__Technologies_container .CV__Technology_container {
-  width: var(--width);
-  height: var(--height);
-  position: absolute;
-  left: 100%;
-  animation: autoRun 15s linear infinite;
-  transition: filter 0.5s;
-  animation-delay: calc( (15s / var(--quantity)) * (var(--position) - 1) - 15s)!important;
-  align-content: center;
-}
-
-.CV__TechSlider .CV__Technologies_container .CV__Technology_container img {
-  width: 100%;
-}
-
-@keyframes autoRun {
-  from{
-      left: 100%;
-  }to{
-      left: calc(var(--width) * -1 - 20px);
-  }
-}
-
-.contact__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  gap: 1.25rem;
-}
-
-.contact__Inner_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 50%;  
-}
-
-.contact__Inner_container:nth-of-type(1) {
-  flex-direction: column;
-  margin-top: 1.25rem;
-}
-
-.contact__Inner_container:nth-of-type(2) {
-  margin-bottom: 1.25rem;
-}
-
-.contact__Name_text {
-  color: #FFFFFF;
-  font-size: 2.5rem;
-  border-bottom: 0.0625rem solid #FFFFFF;
-}
-
-.contact__SubTitle_text {
-  color: #FFFFFF;
-  font-size: 26px;
-  border-bottom: 0.0625rem solid #FFFFFF;
-}
-
-.contact__Email {
-  color: #FFFFFF;
-  font-size: 20px;
-  text-decoration: none;
+app-cv {
+  height: auto;
+  min-height: 100vh;
+  display: block;
+  overflow-y: auto;
 }

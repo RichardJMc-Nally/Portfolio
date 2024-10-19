@@ -1,0 +1,20 @@
+.projects__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+  }
+  
+  .projects__Title_text {
+	color: #FFFFFF;
+	font-size: 3.5rem;
+	font-weight: bold;
+  }
+  
+  .projects__Inner_container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 50%;
+  }
